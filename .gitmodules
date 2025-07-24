@@ -1,0 +1,3 @@
+[submodule "MRDA-Corpus"]
+	path = MRDA-Corpus
+	url = https://github.com/NathanDuran/MRDA-Corpus.git
