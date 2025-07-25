@@ -71,7 +71,9 @@ class DAGC(nn.Module):
         left = self.forward_gru(embeddings)        
         right = self.backward_gru(embeddings)[::-1] # Flip upside-down  
 
+
         nodes = mx.concatenate([left, right], axis = 1)
+
 
         # Add speaker-embedding nodes
         glorot_init = nn.init.glorot_uniform() 
